@@ -1,0 +1,497 @@
+@import url('//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", Arial, sans-serif;
+  height: 100%;
+}
+
+body {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 100%;
+  margin: 0;
+}
+nav {
+  padding: 1rem;
+}
+header {
+  padding: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+main {
+  margin: 0 1rem;
+}
+
+input {
+  font-family: inherit;
+}
+
+#app {
+  height: 100%;
+}
+
+.content {
+  min-height: calc(100vh - 70px);
+}
+
+.header {
+  padding: 1rem;
+}
+
+/*Height of footer must be the same as the amount subtracted from the content height*/
+
+.footer {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+}
+
+.footer__text {
+  font-size: small;
+  margin: .5rem 0;
+}
+
+/*Grid*/
+
+[class*='col-'] {
+  float: left;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*Navigation*/
+
+.navigation__item {
+  float: none;
+  text-align:center;
+}
+
+.navigation__item:last-child {
+  float: none;
+  margin-top: 1rem;
+}
+
+#brand {
+  color: #673ab8;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.fa-upload {
+  color: white;
+}
+
+/*Button*/
+
+.button {
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  padding: .4rem .8rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  border: 1px solid transparent;
+  transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.button:hover {
+  background-color: #4409ad;
+  cursor: pointer;
+}
+
+.search-job {
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.search-job,
+.post-job {
+  color: white;
+  background-color: #673ab8;
+}
+
+.container {
+  margin: 1rem;
+}
+
+.badge {
+  background-color: #10fd56;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: xx-small;
+}
+
+.badge--remote {
+  float: right;
+}
+
+.container__back {
+  background-color: #ffd250;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.fa-chevron-left {
+  color: black;
+}
+
+.back__link {
+  color: black;
+  text-decoration: none;
+  font-size: small;
+}
+
+.detail {
+  margin: 1rem;
+}
+
+.detail__header {
+  padding: 1rem 0 0 0;
+}
+
+.detail__header .header__title {
+  margin: 0;
+  display: inline-block;
+  font-size: x-large;
+}
+.detail__client,.detail__rate, .detail__location,.detail__date, .detail__description {
+  font-size: medium;
+}
+.date__text,
+.rate__text,
+.client__text,
+.location__text {
+  margin-left: .5rem;
+}
+
+.jobs,
+.detail,
+.post {
+  padding: 0 1rem;
+}
+
+.job {
+  margin: 1rem 0;
+  background: #f3f3f3;
+  padding: .5rem;
+  border-radius: .25rem;
+}
+
+.job .row:first-child {
+  margin-bottom: .5rem;
+}
+
+.job__title {
+  display: inline-block;
+}
+
+.job__title .title__text {
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+  font-weight: bold;
+  font-size: larger;
+  cursor: pointer;
+  color: black;
+  padding: 0;
+  display: block;
+}
+
+.jobs .job .job__title .job__client {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  color: darkgrey;
+  font-size: small;
+}
+
+.jobs .job .job__client {
+  display: inline-block;
+  color: darkgrey;
+}
+
+.jobs .job .job__location {
+  margin-bottom: .5rem;
+}
+
+.jobs .job .job__location .location__text {
+  margin-left: .5rem;
+}
+
+.job__date {
+  margin-bottom: 0.5rem;
+}
+
+
+.date__text {
+  margin-left: .5rem;
+}
+
+/*Home Component*/
+
+.home {
+  margin: 1rem;
+}
+
+.home__form * {
+  margin: 0 auto 1rem auto;
+}
+
+.form__input {
+  width: 100%;
+}
+
+.form__input {
+  border: 1px solid lightgrey;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.form__options {
+  padding: .5rem;
+  border: 1px solid lightgrey;
+  border-radius: .25rem;
+  width: 100%;
+}
+
+.search-job {
+  width: 100%;
+}
+
+.home .home__form .form__submit:focus {
+  outline: none;
+}
+
+.job__title,
+.job__date,
+.job__client,
+.job__location {
+  font-size: xx-small;
+}
+
+.post {
+  margin: 1rem;
+}
+
+.post .post__form {
+  margin: 1rem;
+}
+
+.post .post__form label {
+  display: block;
+  max-width: 100%;
+  margin-bottom: .5rem;
+  font-weight: bold;
+}
+
+.post .post__form .form__input {
+  display: block;
+  margin-bottom: 0.5rem;
+  border: 1px solid lightgrey;
+  width: 100%;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+.post .post__form .form__textArea {
+  display: block;
+  width: 100%;
+  height: 100px;
+  border: 1px solid lightgrey;
+  border-radius: .5rem;
+  font-family: inherit;
+  padding: .5rem;
+}
+
+/*Media Queries*/
+
+@media (min-width: 425px) {
+
+  .home__form {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .home__form :not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  .form__input,
+  .form__options,
+  .search-job {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 25%;
+  }
+  .form__options,
+  .search-job {
+    width: auto;
+  }
+  .job__title,
+  .job__date,
+  .job__client,
+  .job__location {
+    font-size: small;
+  }
+
+  /*end of queries*/
+}
+
+@media (min-width: 768px) {
+  .home__form:not(:last-child) {
+    margin-right: 1rem;
+  }
+  .footer__text,
+  .badge--remote {
+    font-size: small;
+  }
+  .job .row:first-child {
+    margin-bottom: 0;
+  }
+  #brand {
+    font-size: x-large;
+  }
+  .navigation__item{
+    float: left;
+  }
+  .navigation__item:last-child {
+    float: right;
+    margin-top: 0;
+}
+  .post-job,
+  .search-job {
+    font-size: medium;
+  }
+  .job__title,
+  .job__date,
+  .job__location {
+    font-size: large;
+  }
+  .job__client {
+    font-size: medium;
+  }
+  .footer__text,
+  .badge--remote {
+    font-size: medium;
+  }
+}
+
+@media (min-width: 1024px) {
+  #brand {
+    font-size: xx-large;
+  }
+  .post-job,
+  .search-job {
+    font-size: large;
+  }
+  .job__title,
+  .job__date,
+  .job__client,
+  .job__location {
+    font-size: large;
+  }
+  .footer__text,
+  .badge--remote {
+    font-size: medium;
+  }
+}
+
+@media (min-width: 1440px) {
+  .form__input,.form__options,.form__options {
+    font-size: larger;
+}
+  .job__title,
+  .job__date,
+  .job__client,
+  .job__location {
+    font-size: x-large;
+  }
+  
+    .footer__text,
+  .badge--remote {
+    font-size: larger;
+  }
+    .post-job,
+  .search-job {
+    font-size: x-large;
+  }
+}
